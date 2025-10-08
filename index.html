@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { text-align: center; }
+    nav { text-align: center; margin-bottom: 20px; }
+    nav a { margin: 0 10px; text-decoration: none; color: blue; font-weight: bold; }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .category {
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      transition: 0.3s;
+      background: #f9f9f9;
+    }
+    .category:hover {
+      transform: scale(1.05);
+      border-color: blue;
+      background: #eef5ff;
+    }
+    .category img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .category h3 {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Home</h1>
+
+  <nav>
+    <a href="./index.html">Home</a> |
+    <a href="./books.html">Books</a> |
+    <a href="./electronic.html">Electronics</a> |
+    <a href="./furniture.html">Furniture</a> |
+    <a href="./sports.html">Sports</a> |
+    <a href="./stationery.html">Stationery</a>
+  </na>
+
+   <div class="categories">
+    <div class="category">
+      <a href="./books.html">
+        <img src="./Images/books.jpeg" alt="Books">
+        <h3>Books</h3>
+      </a>
+    </div>
+    <div class="category">
+      <a href="./electronic.html">
+        <img src="./Images/electronic.jpeg" alt="Electronics">
+        <h3>Electronics</h3>
+      </a>
+    </div>
+    <div class="category">
+      <a href="./furniture.html">
+        <img src="./Images/furniture.jpeg" alt="Furniture">
+        <h3>Furniture</h3>
+      </a>
+    </div>
+    <div class="category">
+      <a href="./sports.html">
+        <img src="./Images/sports.jpeg" alt="Sports">
+        <h3>Sports</h3>
+      </a>
+    </div>
+    <div class="category">
+      <a href="./stationery.html">
+        <img src="./Images/stationery.jpeg" alt="Stationery">
+        <h3>Stationery</h3>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
